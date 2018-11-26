@@ -6,12 +6,12 @@
 /*   By: nmanzini <nmanzini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/05 11:08:02 by mpauw             #+#    #+#             */
-/*   Updated: 2018/06/27 16:25:07 by mpauw            ###   ########.fr       */
+/*   Updated: 2018/06/28 09:22:35 by mpauw            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef RTV1_H
-# define RTV1_H
+#ifndef RT_H
+# define RT_H
 
 # define MAX_S_VALUE 50000
 # define DEG 57.2958
@@ -56,7 +56,6 @@
 
 # include <fcntl.h>
 # include <sys/stat.h>
-# include <stdio.h>
 # include <pthread.h>
 # include <time.h>
 

@@ -39,7 +39,6 @@ object {
 		{path, {./scenes/objs/cow.obj}}
 		{reflection, {0.1 0.3 0.2 10}}
 		{color, {0.8 0.5 0.5}}
-		{rotation, {0.0 0.0 90.0}}
 }
 
 // bottom floor

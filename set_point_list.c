@@ -6,7 +6,7 @@
 /*   By: mpauw <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/08 09:32:03 by mpauw             #+#    #+#             */
-/*   Updated: 2018/06/26 11:52:12 by mpauw            ###   ########.fr       */
+/*   Updated: 2018/06/28 09:19:27 by mpauw            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	set_point_list(t_pattern *p)
 	double		increment;
 	int			ran;
 
+	if (p->amount_points > 150)
+		p->amount_points = 150;
 	ran = p->amount_points * ((double)rand() / (double)RAND_MAX);
 	if (!(p->points_arr = (t_3v *)malloc(sizeof(t_3v) * p->amount_points)))
 		error(2);

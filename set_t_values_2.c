@@ -6,7 +6,7 @@
 /*   By: mpauw <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/25 10:15:04 by mpauw             #+#    #+#             */
-/*   Updated: 2018/06/27 16:27:26 by mpauw            ###   ########.fr       */
+/*   Updated: 2018/06/28 08:52:16 by mpauw            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,8 @@ static void		get_vis_obj(t_pixel *p, t_3v dir, t_scene sc, t_p_info *pi)
 	int			var[3];
 	t_list		*tmp_obj;
 	t_object	*obj;
-	t_object	*visible_object;
 
-	visible_object = NULL;
+	pi->vis_obj = NULL;
 	tmp_obj = sc.objects;
 	pi->has_vis_obj = 0;
 	while (tmp_obj && tmp_obj->content)
@@ -45,6 +44,13 @@ static void		get_vis_obj(t_pixel *p, t_3v dir, t_scene sc, t_p_info *pi)
 		}
 		tmp_obj = tmp_obj->next;
 	}
+}
+
+static t_p_info	*handle_no_vis_obj(t_pixel *p, t_p_info *pi)
+{
+	if (p->has_vis_obj)
+		free(pi);
+	return (NULL);
 }
 
 /*
@@ -76,11 +82,7 @@ static t_p_info	*init_p_info(t_pixel *p, t_3v dir, t_scene scene, int type)
 	pi->fresnal_specular = 1.0;
 	pi->is_inside = 0;
 	if (!(pi->has_vis_obj))
-	{
-		if (p->has_vis_obj)
-			free(pi);
-		return (NULL);
-	}
+		return (handle_no_vis_obj(p, pi));
 	pi->beer = ft_init_3v(pi->vis_obj->m.beer.v[0],
 		pi->vis_obj->m.beer.v[1], pi->vis_obj->m.beer.v[2]);
 	return (pi);

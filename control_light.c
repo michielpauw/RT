@@ -6,7 +6,7 @@
 /*   By: mpauw <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/09 14:12:15 by mpauw             #+#    #+#             */
-/*   Updated: 2018/06/27 14:01:39 by mpauw            ###   ########.fr       */
+/*   Updated: 2018/06/28 08:59:58 by mpauw            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static	t_source	*get_source(t_list *lst, int id)
 	return (NULL);
 }
 
-void	*init_light_values(void *arg)
+void				*init_light_values(void *arg)
 {
 	t_event			*event;
 	t_list			*s_lst;
@@ -50,7 +50,7 @@ void	*init_light_values(void *arg)
 	return (NULL);
 }
 
-void	change_light(t_event *event, int brighter)
+void				change_light(t_event *event, int brighter)
 {
 	t_source	*src;
 

@@ -1,5 +1,5 @@
 render {
-		{name, {Scene Plane}}
+		{name, {Limited plane}}
 		{dimensions, {1000 700}}
 		{ambient, {5}}
 }
@@ -36,8 +36,21 @@ light {
 }
 object {
 		{type, {plane}}
-		{origin, {0.0 0.0 0.0}}
-		{rotation, {0.0 90.0 0.0}}
+		{origin, {0.0 0.0 -100.0}}
+		{rotation, {0.0 0.0 0.0}}
 		{material, {1}}
-		{reflection, {0.0 0.4 0.5 20}}
+		{limited_by_1, {4}}
+		{limited_by_2, {5}}
+}
+object {
+		{limit_id, {4}}
+		{visible, {0}}
+		{origin, {0.0 -120.0 0.0}}
+		{rotation, {90.0 0.0 0.0}}
+}
+object {
+		{limit_id, {5}}
+		{visible, {0}}
+		{origin, {0.0 120.0 0.0}}
+		{rotation, {90.0 0.0 0.0}}
 }
