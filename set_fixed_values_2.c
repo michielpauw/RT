@@ -6,7 +6,7 @@
 /*   By: mpauw <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/21 18:33:38 by mpauw             #+#    #+#             */
-/*   Updated: 2018/06/26 11:47:49 by mpauw            ###   ########.fr       */
+/*   Updated: 2018/11/27 16:45:21 by mpauw            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 ** a camera, light source or reflection/transparent point. Instead of
 ** calculating them at every pixel, we fix them for every object.
 */
+
+#include <stdio.h>
 
 static void	set_fixed_value_2(t_3v origin, t_object *o, t_fixed_v *f)
 {

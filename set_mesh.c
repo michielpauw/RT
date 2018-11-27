@@ -6,7 +6,7 @@
 /*   By: sadamant <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/18 21:59:09 by sadamant          #+#    #+#             */
-/*   Updated: 2018/06/26 16:11:06 by mpauw            ###   ########.fr       */
+/*   Updated: 2018/11/27 17:20:45 by mpauw            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ static void	create_triangle(t_list **objects, t_object *parent, t_scene *scene,
 	obj.origin = rotate_v(coordinates[0], obj.group_rotation);
 	obj.origin_2 = rotate_v(coordinates[1], obj.group_rotation);
 	obj.origin_3 = rotate_v(coordinates[2], obj.group_rotation);
+	obj.rotation = ft_zero_3v();
+	obj.group_id = 0;
 	free(coordinates);
 	ft_lstaddnewr(objects, &obj, sizeof(obj));
 }

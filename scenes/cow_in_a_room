@@ -2,7 +2,7 @@ render {
 		{name, {Cow in a room}}
 		{dimensions, {512 512}}
 		{ambient, {2}}
-		{grain, {16}}
+		{grain, {4}}
 }
 
 camera {
@@ -11,33 +11,22 @@ camera {
 }
 
 light {
-		{origin, {100 100 100}}
+		{origin, {-9.0 9.0 9.0}}
 		{color, {1.0 1.0 1.0}}
-		{intensity, {30 1}}
+		{intensity, {2 0}}
 }
 
 light {
-		{origin, {100.0 -100.0 100.0}}
+		{origin, {8.0 0.0 3.0}}
 		{color, {1.0 1.0 1.0}}
-		{intensity, {30 1}}
-}
-
-light {
-		{origin, {-100.0 -100.0 100.0}}
-		{color, {1.0 1.0 1.0}}
-		{intensity, {30 1}}
-}
-
-light {
-		{origin, {-100.0 100.0 100.0}}
-		{color, {1.0 1.0 1.0}}
-		{intensity, {30 1}}
+		{intensity, {1 0}}
 }
 
 object {
 		{type, {mesh}}
 		{path, {./scenes/objs/cow.obj}}
 		{reflection, {0.1 0.3 0.2 10}}
+		{rotation, {0 0 335}}
 		{color, {0.8 0.5 0.5}}
 }
 
@@ -45,19 +34,19 @@ object {
 
 object {
 		{type, {plane}}
-		{origin, {0.0 0.0 -150.0}}
-		{rotation, {0 0.0 0.0}}
-		{color, {0.5 0.9 0.5}}
+		{origin, {0.0 0.0 -3.6}}
+		{rotation, {0 0.0 -90.0}}
+		{color, {0.19 0.42 0.35}}
 		{reflection, {0.1 0.4 0.6 20}}
 }
 
 // ceiling
 
-object {
+*object {
 		{type, {plane}}
-		{origin, {0.0 0.0 300}}
+		{origin, {0.0 0.0 30}}
 		{rotation, {0 0.0 0.0}}
-		{color, {1 1 1}}
+		{color, {0.92 0.81 0.52}}
 		{reflection, {0.1 0.4 0.6 20}}
 }
 
@@ -65,9 +54,9 @@ object {
 
 object {
 		{type, {plane}}
-		{origin, {0.0 -300.0 0.0}}
+		{origin, {0.0 -34.0 0.0}}
 		{rotation, {90.0 0.0 0.0}}
-		{color, {0.5 0.5 0.5}}
+		{color, {0.92 0.81 0.52}}
 		{reflection, {0.1 0.0 0.6 20}}
 }
 
@@ -75,9 +64,9 @@ object {
 
 object {
 		{type, {plane}}
-		{origin, {0.0 300.0 0.0}}
+		{origin, {0.0 34.0 0.0}}
 		{rotation, {-90.0 0.0 0.0}}
-		{color, {0.5 0.5 0.5}}
+		{color, {0.92 0.81 0.52}}
 		{reflection, {0.1 0.0 0.6 20}}
 }
 
@@ -85,8 +74,8 @@ object {
 
 object {
 		{type, {plane}}
-		{origin, {-300.0 0.0 0.0}}
+		{origin, {-30.0 0.0 0.0}}
 		{rotation, {-90.0 0.0 90.0}}
-		{color, {0.5 0.5 0.5}}
+		{color, {0.92 0.81 0.52}}
 		{reflection, {0.1 0.0 0.6 20}}
 }

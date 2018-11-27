@@ -6,7 +6,7 @@
 /*   By: mpauw <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/18 13:23:19 by mpauw             #+#    #+#             */
-/*   Updated: 2018/06/28 09:00:55 by mpauw            ###   ########.fr       */
+/*   Updated: 2018/11/27 17:20:36 by mpauw            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ void		set_finish(t_scene *scene)
 	t_object	*obj;
 
 	tmp_obj = scene->objects;
-	if (scene->cam_set > 1)
+	if (scene->cam_set > 3)
 		scene->max_anti_a = 1;
 	while (tmp_obj && tmp_obj->content)
 	{

@@ -6,7 +6,7 @@
 /*   By: nmanzini <nmanzini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/05 11:08:02 by mpauw             #+#    #+#             */
-/*   Updated: 2018/06/28 09:22:35 by mpauw            ###   ########.fr       */
+/*   Updated: 2018/11/27 14:40:05 by mpauw            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@
 # define MAX_CAM 3
 # define MAX_GRAIN 4
 # define MAX_REFL 2
-# define MAX_ANTI_A 2
+# define MAX_ANTI_A 4
 # define MAX_PIXELS 1024000
 # define MAX_AMBIENT 5
 
