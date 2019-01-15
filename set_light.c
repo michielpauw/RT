@@ -25,6 +25,7 @@ static t_source	init_light(t_scene *scene)
 	scene->amount_light++;
 	light.id = scene->amount_light;
 	light.type = 1;
+	light.on = 1;
 	light.max_intensity = 0.01;
 	light.int_factor = 1.0;
 	return (light);

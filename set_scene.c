@@ -30,6 +30,7 @@ static void	init_def_scene(t_scene *scene)
 	scene->cam_set = 0;
 	scene->ambient = 0.5;
 	scene->grain = 1;
+	scene->all_on = 1;
 	scene->anti_a = 1;
 	scene->max_anti_a = MAX_ANTI_A;
 	scene->step_size = scene->grain > 1 ? scene->grain :
