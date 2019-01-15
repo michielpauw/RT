@@ -11,5 +11,5 @@ The idea of ray tracing is that you trace a ray of light from a camera, through 
 ![alt_text](./images/light_effects_4.png)
 ![alt_text](./images/snowman_party.png)
 ![alt_text](./images/snowman_fallen_over.png)
-![alt_text](./images/cow.png)
+![alt_text](./images/cow.jpg)
 ![alt_text](./images/cow_rotated.png)
