@@ -5,3 +5,7 @@ The idea of ray tracing is that you trace a ray of light from a camera, through 
 
 ![alt_text](./images/glass_sphere_1.png)  
 ![alt_text](./images/glass_sphere_2.png)
+![alt_text](./images/light_effects_1.png)
+![alt_text](./images/light_effects_2.png)
+![alt_text](./images/light_effects_3.png)
+![alt_text](./images/light_effects_4.png)
